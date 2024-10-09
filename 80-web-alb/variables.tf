@@ -14,11 +14,12 @@ variable "common_tags" {
     }
 }
 
-variable "backend_tags" {
+variable "web_alb_tags" {
     default = {
-        Component = "backend"
+        component = "web-alb"
     }
 }
+
 
 variable "zone_name" {
     default = "daws81s.shop"
